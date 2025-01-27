@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
     <title>James Philip Grimard | Investment Portfolio</title>
-    <!--Basic meta info -->
+    <!-- Basic meta info -->
     <meta name="keywords" content="James Philip Grimard, James Grimard, Grimard, Investment Portfolio, James Grimard Investment Portfolio">
     <meta name="author" content="James Philip Grimard" />
     <meta name="description" content="James Philip Grimard | Investment Portfolio">
 
-    <!--OpenGraph meta -->
+    <!-- OpenGraph meta -->
     <meta property="og:title" content="James Grimard" />
     <meta property="og:type" content="website">
     <meta name="robots" content="index">
@@ -21,6 +21,15 @@
 
     <link rel="canonical" href="jamesgrimard.github.io/">
 
+    <style>
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,27 +37,58 @@
     <div>
         <h3>James Philip Grimard | Investment Portfolio</h3>
     </div>
-
+    <div>
+        <a href="/letters.html">Monthly Investment Letters</a>
+    </div>
     <div>
         <a href="/reading.html">Required Reading</a>
     </div>
 
-    <div>
-        <p><h5>Current Portfolio Holdings (12 Nov 2024)</h5></p>
-        <p><b>Stocks:</b></p>
-        <p>0%</p>
-        <p><b>Bonds:</b></p>
-        <p>0%</p>
-        <p><b>Other:</b></p>
-        <p>0%</p>
-        <p><b>Cash:</b></p>
-        <p>100%</p>
+    <div class="portfolio-section">
+        <h5>Current Portfolio Holdings (12 Nov 2024)</h5>
+        <table>
+            <thead>
+                <tr>
+                    <th>Asset Class</th>
+                    <th>Allocation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stocks</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>Bonds</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>Other</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>Cash</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-    <div>
-        <p><h5>Currency Exposure</h5></p>
-        <p><b>USD:</b></p>
-        <p>100%</p>
+    <br>
+    <div class="currency-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Exposure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USD</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </body>

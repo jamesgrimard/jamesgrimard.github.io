@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <base href="/" />
     <title>James Philip Grimard | Investment Portfolio</title>
     <!-- Basic meta info -->
-    <meta name="keywords" content="James Philip Grimard, James Grimard, Grimard, Investment Portfolio, James Grimard Investment Portfolio">
+    <meta name="keywords" content="James Philip Grimard, James Grimard, Grimard, Investment Portfolio, James Grimard Investment Portfolio, JP GRIMARD & CO, J.P. Grimard & Co., JP Grimard">
     <meta name="author" content="James Philip Grimard" />
     <meta name="description" content="James Philip Grimard | Investment Portfolio">
 
@@ -29,6 +30,56 @@
         a:hover {
             text-decoration: underline;
         }
+
+        table {
+            border: 1px solid #ccc; /* Simple grey border */
+            padding: 8px; /* Add some space inside cells */
+            text-align: left; /* Align text to the left */
+            border-collapse: collapse; /* Remove double borders */
+        }
+        th, td {
+            border: 1px solid #ccc; /* Simple grey border */
+            padding: 8px; /* Add some space inside cells */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: #f2f2f2; /* Light grey background for header */
+        }
+
+        /* Align numerical data to the right in Holdings Table (columns 3 & 4) */
+        .holdings-table th:nth-child(3),
+        .holdings-table td:nth-child(3),
+        .holdings-table th:nth-child(4),
+        .holdings-table td:nth-child(4) {
+            text-align: right;
+        }
+
+         /* Align numerical data to the right in Currency Table (columns 2 & 3) */
+        .currency-table th:nth-child(2),
+        .currency-table td:nth-child(2),
+        .currency-table th:nth-child(3),
+        .currency-table td:nth-child(3) {
+            text-align: right;
+        }
+
+        .performance-table th:nth-child(2),
+        .performance-table td:nth-child(2),
+        .performance-table th:nth-child(3),
+        .performance-table td:nth-child(3),
+        .performance-table th:nth-child(4),
+        .performance-table td:nth-child(4) {
+            text-align: right;
+        }
+        
+
+        /* Style for total rows */
+         tfoot td {
+            font-weight: bold;
+            text-align: right;
+        }
+        .total {
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -44,52 +95,99 @@
         <a href="/reading.html">Required Reading</a>
     </div>
 
-    <div class="portfolio-section">
-        <h5>Current Portfolio Holdings (January 2025)</h5>
-        <table>
-            <thead>
-                <tr>
-                    <th>Asset Class</th>
-                    <th>Allocation</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Stocks</td>
-                    <td>0%</td>
-                </tr>
-                <tr>
-                    <td>Bonds</td>
-                    <td>0%</td>
-                </tr>
-                <tr>
-                    <td>Other</td>
-                    <td>0%</td>
-                </tr>
-                <tr>
-                    <td>Cash</td>
-                    <td>100%</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     <br>
-    <div class="currency-section">
-        <table>
-            <thead>
-                <tr>
-                    <th>Currency</th>
-                    <th>Exposure</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>USD</td>
-                    <td>100%</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <br>
+
+    <i>Holdings as of MARCH 2025</i>
+
+    <table class="holdings-table">
+        <thead>
+            <tr>
+                <th>Asset Class</th>
+                <th>Description / Holding</th>
+                <th>% of Portfolio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Derivatives</td>
+                <td>META260618P00090000 - META 18JUN26 90 P</td>
+                <td>1.42%</td>
+            </tr>
+            <!-- Cash Section -->
+             <tr>
+                <td>Cash & Equivalents</td>
+                <td>SHV - iShares Short Treasury Bond ETF</td>
+                <td>98.58%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+             <tr>
+                <td colspan="2" class="total">Total</td>
+                <td>100.0%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- Currency Exposure Table -->
+    <table class="currency-table">
+         <thead>
+            <tr>
+                <th>Currency Exposure</th>
+                <th>% of Portfolio</th>
+            </tr>
+        </thead>
+         <tbody>
+             <tr>
+                 <td>USD (US Dollar)</td>
+                 <td>100.00%</td>
+             </tr>
+         </tbody>
+         <tfoot>
+             <tr>
+                <td class="total">Total</td>
+                <td>100.00%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <hr style="width:50%;text-align:left;margin-left:0">
+    <br>
+
+    <i>Quarterly Performance Comparison - Mark-to-Market</i>
+
+    <table class="performance-table">
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>James Philip Grimard Return (%)</th>
+                <th>S&P 500 Index Return (%)*</th>
+                <th>Spread (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Q1 2025</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+         <tfoot>
+             <tr>
+                <td>YTD 2025</td>
+                <td></td> <!-- Note: Needs geometric linking, not simple sum -->
+                <td></td> <!-- Note: Needs geometric linking, not simple sum -->
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
 
 </body>
 
